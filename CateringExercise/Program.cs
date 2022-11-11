@@ -1,8 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 
 Console.WriteLine("Hello, World!");
-
+//here's how I solved this: https://gist.github.com/yevgeller/7521a06298ce01758739a0b4b8c59a4c
 
 //download the file
 HttpClient client = new HttpClient();
@@ -60,7 +59,3 @@ desserts.ToList().ForEach(x =>
     Console.WriteLine($"{x["name"]} at ${x["price"]})");
 });
 Console.WriteLine("Remaning funds: $" + remainingTotal);
-var i = 1;
-//parse it
-
-//come up with a menu
